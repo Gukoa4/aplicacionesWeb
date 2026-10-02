@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <!-- Vinculación a la hoja de estilos externa -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+
+    <!-- Reemplazo del <div> por <header> semántico para mantener el mismo layout que index.html -->
+    <header class="header-principal">
+        <!-- Isologotipo con enlace a la página principal y atributo alt explicativo -->
+        <a href="index.html" class="logo-link">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable" class="logo-img">
+        </a>
+
+        <!-- Navegación principal completa para coincidir con index.html -->
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#cabanas">Cabañas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-contenido">
+        <h1>Reservas</h1>
+        <h2>Contactanos</h2>
+
+        <!-- Formulario configurado con sus atributos de funcionamiento y etiquetas vinculadas mediante 'for' e 'id' -->
+        <form action="#" method="POST" class="formulario-reserva">
+
+            <div class="campo-form">
+                <label for="nombre">Nombre de la persona que consulta:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+
+            <div class="campo-form">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 3511234567">
+            </div>
+
+            <div class="campo-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            </div>
+
+            <div class="campo-form">
+                <label for="fecha_desde">Fecha desde:</label>
+                <input type="date" id="fecha_desde" name="fecha_desde" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="fecha_hasta">Fecha hasta:</label>
+                <input type="date" id="fecha_hasta" name="fecha_hasta" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="5" placeholder="Escriba su consulta..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Consulta</button>
+
+        </form>
+    </main>
+
+    <!-- Reemplazo del <div> por <footer> semántico para el pie de página -->
+    <footer class="footer-principal">
+        <p>&copy; 2026 Estudio Copan Arquitectura - Retiro Sustentable. San Javier, Traslasierra, Córdoba.</p>
+    </footer>
+
+</body>
+</html>

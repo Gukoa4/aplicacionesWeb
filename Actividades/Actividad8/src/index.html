@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo de Cabañas</title>
+    <!-- Vinculación a la hoja de estilos externa organizada según la estructura de carpetas -->
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+
+    <!-- Reemplazo de <div> por <header> semántico para identificar la cabecera del sitio -->
+    <header class="header-principal">
+        <!-- El isologotipo enlazado al inicio (index.html).
+             El atributo 'alt' es obligatorio para la accesibilidad (lectores de pantalla) y SEO -->
+        <a href="index.html" class="logo-link">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Isologotipo de Retiro Sustentable" class="logo-img">
+        </a>
+
+        <!-- Uso del elemento semántico <nav> para el menú de navegación principal -->
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#cabanas">Cabañas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Elemento <main> para englobar el contenido principal y exclusivo de la página -->
+    <main class="main-contenido"> 
+        
+        <section class="bienvenida">
+            <h1>Catálogo de Cabañas</h1>
+            <h2>Cabañas para alquiler en San Javier</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bienvenido a nuestro catálogo de cabañas. Explora nuestras opciones al pie de la montaña y encuentra la que mejor se adapte a tu descanso.</p>
+        </section>
+
+        <!-- Agrupación semántica con <section> para la lista del catálogo -->
+        <section id="cabanas" class="seccion-cabanas">
+            
+            <!-- Cada cabaña se representa con <article> al ser contenido independiente y reutilizable -->
+            <article class="tarjeta-cabana">
+                <img src="./recursos/imagenes/modelo1.webp" alt="Cabaña Champaquí integrada en las sierras">
+                <h3>Cabaña Champaquí</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ambiente cálido con vista panorámica al cerro.</p>
+                <p class="precio">Precio por día: <strong>$45.000 ARS</strong></p>
+                <a href="reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+            <article class="tarjeta-cabana">
+                <img src="./recursos/imagenes/modelo2.webp" alt="Cabaña San Javier rodeada de naturaleza">
+                <h3>Cabaña San Javier</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Totalmente equipada con amplia galería y tranquilidad.</p>
+                <p class="precio">Precio por día: <strong>$50.000 ARS</strong></p>
+                <a href="reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+            <article class="tarjeta-cabana">
+                <img src="./recursos/imagenes/modelo3.webp" alt="Cabaña Traslasierra acogedora">
+                <h3>Cabaña Traslasierra</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ideal para parejas o familias chicas que buscan confort.</p>
+                <p class="precio">Precio por día: <strong>$42.000 ARS</strong></p>
+                <a href="reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+            <article class="tarjeta-cabana">
+                <img src="./recursos/imagenes/modelo4.webp" alt="Cabaña Algarrobo en el bosque nativo">
+                <h3>Cabaña Algarrobo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Construcción ecológica rodeada de vegetación autóctona.</p>
+                <p class="precio">Precio por día: <strong>$48.000 ARS</strong></p>
+                <a href="reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Reemplazo de <div> por <footer> semántico para el pie de página -->
+    <footer class="footer-principal">
+        <p>&copy; 2026 Estudio Copan Arquitectura - Retiro Sustentable. San Javier, Traslasierra, Córdoba.</p>
+    </footer>
+
+</body>
+</html>
